@@ -1,10 +1,9 @@
-module github.com/wowchemy/starter-hugo-markdown-slides
+module github.com/HugoBlox/kit/templates/markdown-slides
 
-go 1.15
+go 1.19
 
 require (
-	github.com/HugoBlox/hugo-blox-builder/modules/blox-bootstrap/v5 v5.9.7
-	github.com/HugoBlox/hugo-blox-builder/modules/blox-plugin-decap-cms v0.1.2-0.20231108143325-448ed0e3bd2b
-	github.com/HugoBlox/hugo-blox-builder/modules/blox-plugin-netlify v1.1.2-0.20231108143325-448ed0e3bd2b
-	github.com/HugoBlox/hugo-blox-builder/modules/blox-plugin-reveal v1.1.3-0.20231108143325-448ed0e3bd2b
+	github.com/HugoBlox/kit/modules/integrations/netlify v0.0.0-20260102210655-66cba27dc652
+	github.com/HugoBlox/kit/modules/blox v0.0.0-20260106201334-85307a809791
+	github.com/HugoBlox/kit/modules/slides v0.0.0-20260106201226-bfdcb6603c34
 )

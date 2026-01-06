@@ -1,171 +1,166 @@
 ---
-title: Example Slides
-summary: An introduction to using Wowchemy's Slides feature.
-authors: []
-tags: ['Tutorials']
-categories: []
-date: '2019-02-05'
+title: "Markdown Slides Demo"
+date: 2025-12-15
+description: "A comprehensive demo of all Reveal.js features available in Hugo Blox"
+authors: ["me", "Hugo Blox Team"]
+tags: ["demo", "tutorial", "features"]
+venue: "Hugo Blox Tutorial"
+featured: true
+type: slides
 slides:
-  # Choose a theme from https://github.com/hakimel/reveal.js#theming
   theme: black
-  # Choose a code highlighting style (see Hugo docs on Chroma)
-  #   Light style: github-light. Dark style: dracula (default).
   highlight_style: dracula
+  diagram: true
+  reveal_options:
+    controls: true
+    progress: true
+    slideNumber: true
+    hash: true
 ---
 
-# Create slides in Markdown with Wowchemy
+# Markdown Slides
 
-[Wowchemy](https://hugoblox.com/) | [Documentation](https://docs.hugoblox.com/content/slides/)
-
----
-
-## Features
-
-- Efficiently write slides in Markdown
-- 3-in-1: Create, Present, and Publish your slides
-- Supports speaker notes
-- Mobile friendly slides
+### Write in Markdown. Present Anywhere.
 
 ---
 
-## Controls
+## What You Can Do
 
-- Next: `Right Arrow` or `Space`
-- Previous: `Left Arrow`
-- Start: `Home`
-- Finish: `End`
-- Overview: `Esc`
-- Speaker notes: `S`
-- Fullscreen: `F`
-- Zoom: `Alt + Click`
-- [PDF Export](https://revealjs.com/pdf-export/)
+- Write slides in **pure Markdown**
+- Include **code**, **math**, and **diagrams**
+- Add **speaker notes** for presenter view
+- Use **progressive reveals** for storytelling
+- Customize **themes** and **transitions**
 
 ---
 
 ## Code Highlighting
 
-Inline code: `variable`
-
-Code block:
-
 ```python
-porridge = "blueberry"
-if porridge == "blueberry":
-    print("Eating...")
+def fibonacci(n: int) -> int:
+    if n <= 1:
+        return n
+    return fibonacci(n-1) + fibonacci(n-2)
+    
+# Calculate the 10th Fibonacci number
+print(fibonacci(10))  # Output: 55
 ```
 
 ---
 
-## Math
+## Mathematical Equations
 
-In-line math: $x + y = z$
+Einstein's famous equation:
 
-Block math:
+$$E = mc^2$$
 
-$$
-f\left( x \right) = \;\frac{{2\left( {x + 4} \right)\left( {x - 4} \right)}}{{\left( {x + 4} \right)\left( {x + 1} \right)}}
-$$
+The quadratic formula:
 
----
-
-## Fragments
-
-Make content appear incrementally
-
-```
-{{</* fragment */>}} $\mathbf{y} =  $ {{</* /fragment */>}}
-{{</* fragment */>}} $X\boldsymbol\beta$ {{</* /fragment */>}}
-{{</* fragment */>}} $+ \boldsymbol\varepsilon$ {{</* /fragment */>}}
-```
-
-Press `Space` to play!
-
-{{< fragment >}} $\mathbf{y} =  $ {{< /fragment >}}
-{{< fragment >}} $X\boldsymbol\beta$ {{< /fragment >}}
-{{< fragment >}} $+ \boldsymbol\varepsilon$ {{< /fragment >}}
+$$x = \frac{-b \pm \sqrt{b^2-4ac}}{2a}$$
 
 ---
 
-A fragment can accept two optional parameters:
+## Mermaid Diagrams
 
-- `class`: use a custom style (requires definition in custom CSS)
-- `weight`: sets the order in which a fragment appears
+```mermaid
+graph LR
+    A[Markdown] --> B[Hugo]
+    B --> C[Reveal.js]
+    C --> D[Beautiful Slides]
+```
+
+---
+
+## Progressive Reveals
+
+Build your narrative step by step:
+
+{{< fragment >}}First, introduce the concept{{< /fragment >}}
+
+{{< fragment >}}Then, add supporting details{{< /fragment >}}
+
+{{< fragment >}}Finally, deliver the conclusion{{< /fragment >}}
 
 ---
 
 ## Speaker Notes
 
-Add speaker notes to your presentation
+Press **S** to open presenter view!
 
-```markdown
-{{%/* speaker_note */%}}
-
-- Only the speaker can read these notes
-- Press `S` key to view
-
-{{%/* /speaker_note */%}}
-```
-
-Press the `S` key to view the speaker notes!
-
-{{< speaker_note >}}
-
-- Only the speaker can read these notes
-- Press `S` key to view
-
-{{< /speaker_note >}}
+Note:
+- These notes are only visible in presenter mode
+- Perfect for talking points and reminders
+- Supports **Markdown** formatting
+- Add timing cues and references here
 
 ---
 
-## Themes
+## Dual Column Layout
 
-- black: Black background, white text, blue links (default)
-- white: White background, black text, blue links
-- league: Gray background, white text, blue links
-- beige: Beige background, dark text, brown links
-- sky: Blue background, thin dark text, blue links
+<div class="r-hstack">
 
----
+<div style="flex: 1; padding-right: 1rem;">
 
-- night: Black background, thick white text, orange links
-- serif: Cappuccino background, gray text, brown links
-- simple: White background, black text, blue links
-- solarized: Cream-colored background, dark green text, blue links
+### Benefits
 
----
+- Open source
+- Version control
+- No vendor lock-in
+- Works offline
 
-{{< slide background-image="boards.webp" >}}
+</div>
 
-## Custom Slide
+<div style="flex: 1; padding-left: 1rem;">
 
-Customize the slide style and background
+### Use Cases
 
-```markdown
-{{</* slide background-image="boards.webp" */>}}
-{{</* slide background-color="#0000FF" */>}}
-{{</* slide class="my-style" */>}}
-```
+- Tech talks
+- Academic papers
+- Team updates
+- Training sessions
 
----
+</div>
 
-## Custom CSS Example
-
-Let's make headers navy colored.
-
-Create `assets/css/reveal_custom.css` with:
-
-```css
-.reveal section h1,
-.reveal section h2,
-.reveal section h3 {
-  color: navy;
-}
-```
+</div>
 
 ---
 
-# Questions?
+{{< slide background-color="#1e3a8a" >}}
 
-[Ask](https://discord.gg/z8wNYzb)
+## Custom Backgrounds
 
-[Documentation](https://docs.hugoblox.com/content/slides/)
+Slides can have **custom colors** or images.
+
+Use `{{</* slide background-color="#hex" */>}}`
+
+---
+
+## Keyboard Shortcuts
+
+| Key | Action |
+|-----|--------|
+| `→` / `←` | Navigate slides |
+| `S` | Speaker notes |
+| `F` | Fullscreen |
+| `O` | Overview mode |
+| `ESC` | Exit modes |
+
+---
+
+## Get Started
+
+1. Create a file in `content/slides/`
+2. Add front matter with `type: slides`
+3. Write your content in Markdown
+4. Separate slides with `---`
+
+---
+
+## Thank You!
+
+**Questions?**
+
+- GitHub: [HugoBlox/kit](https://github.com/HugoBlox/kit)
+- Docs: [docs.hugoblox.com](https://docs.hugoblox.com)
+
+*Built with Markdown Slides*
