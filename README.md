@@ -14,23 +14,19 @@
   &nbsp;•&nbsp;
   <a href="https://hugoblox.com/templates/?open=markdown-slides&loading=true&utm_source=github&utm_medium=readme">Live Demo</a>
   &nbsp;•&nbsp;
-  <a href="https://docs.hugoblox.com/guides/studio/">HugoBlox Studio (Visual Editor)</a>
+  <a href="https://docs.hugoblox.com/guides/studio/">Lore Studio (Visual Editor)</a>
 </p>
-
 
 <p align="center">
   <b>▶︎ Watch Preview</b>
 </p>
 
-<!-- Video placeholder - replace with actual video link when available -->
-<p align="center">
-  <i>Video coming soon...</i>
-</p>
+https://github.com/user-attachments/assets/5a93788a-65d7-4a56-8355-4a2098a5f89b
 
 <p align="center">
   <a href="https://discord.gg/z8wNYzb"><img src="https://img.shields.io/discord/722225264733716590?label=Join%20Discord&style=social" alt="Discord"></a>
   <a href="https://github.com/HugoBlox/kit"><img src="https://img.shields.io/github/stars/HugoBlox/kit?label=Star%20HugoBlox&style=social" alt="GitHub Stars"></a>
-  <a href="https://x.com/BuildLore"><img src="https://img.shields.io/twitter/follow/BuildLore?label=Follow&style=social" alt="Follow on X"></a>
+  <a href="https://x.com/LoreLabs_"><img src="https://img.shields.io/twitter/follow/LoreLabs_?label=Follow&style=social" alt="Follow on X"></a>
 </p>
 
 ---
@@ -75,7 +71,7 @@ Deploy this template in ~60 seconds:
 
 - [Deploy in browser →](https://hugoblox.com/templates/markdown-slides/start?utm_source=github&utm_medium=readme)
 
-### Option 2 — HugoBlox Studio (visual editor in VS Code)
+### Option 2 — Lore Studio (visual editor in VS Code)
 
 - [Studio guide →](https://docs.hugoblox.com/guides/studio/?utm_source=github&utm_medium=readme)
 - [Studio AI automation plans (Free/Plus/Pro) →](https://hugoblox.com/pricing/?utm_source=github&utm_medium=readme)
