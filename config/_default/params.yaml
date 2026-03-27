@@ -34,8 +34,8 @@ hugoblox:
   # TYPOGRAPHY
   # ────────────────────────────────────────────────────────────────────────────
   typography:
-    font: "sans"                        # sans | serif | native
-    size: "md"                          # sm | md | lg | xl
+    # Theme pack: name from data/fonts/
+    pack: "modern"
 
   # ────────────────────────────────────────────────────────────────────────────
   # LAYOUT
