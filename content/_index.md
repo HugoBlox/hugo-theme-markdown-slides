@@ -4,9 +4,6 @@ summary: ''
 date: 2025-01-01
 type: landing
 
-design:
-  spacing: '4rem'
-
 sections:
   # Hero Section
   - block: hero
